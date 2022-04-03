@@ -1,0 +1,8 @@
+<div id="game-id" data-game-id="<%= @game.id %>">
+  <% if @game.connections >= 2 %>
+    <h1>Sorry, this game has already started</h1>
+  <% else %>
+    <%= javascript_pack_tag 'index' %>
+  <% end %>
+</div>
+
